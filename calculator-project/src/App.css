@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:wght@300;400;500;600;700;800;900&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ABeeZee", sans-serif;
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #091921;
+}
+
+.calculator
+{
+  position: relative;
+  display: grid;
+}
+
+.calculator .value
+{
+  grid-column: span 4;
+  height: 100px;
+  text-align: right;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.calculator button
+{
+  display: grid;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  background: #0c2835;
+  place-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.calculator button:active
+{
+  background: rgb(26, 133, 175);
+  color: #111;
+}
+
+.calculator .numclear
+{
+  background: rgb(252, 45, 45);
+}
+
+.calculator button.plus
+{
+  grid-row: span 2;
+  height: 120px;
+}
+
+.calculator button.equal
+{
+  background: orange;
+}
